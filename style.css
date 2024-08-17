@@ -388,7 +388,7 @@ footer .line-footer p a {
     }
 }
 
-#contact-section {
+.contact-section {
     background-color: #2a2a2a; /* Cinza escuro */
     padding: 50px;
     border: 1px solid #444;
