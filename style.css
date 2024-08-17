@@ -387,3 +387,53 @@ footer .line-footer p a {
         text-align: center;
     }
 }
+
+#contact-section {
+    background-color: #2a2a2a; /* Cinza escuro */
+    padding: 50px;
+    border: 1px solid #444;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #e60000; /* Vermelho */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1a1a1a; /* Preto */
+    color: #f5f5f5; /* Branco suave */
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e60000; /* Vermelho */
+    color: #f5f5f5; /* Branco suave */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3333; /* Vermelho claro */
+}
