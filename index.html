@@ -20,7 +20,7 @@
 <body>
 <section id="começo" class="começo">
     <header>
-        <div class="interface">
+        <div class="interface" id="navbar">
             <div class="logo">
                 <a href="#começo">
                     <img src="logo1.png" alt="Logo" width="85" height="85">
@@ -35,12 +35,13 @@
                 </ul>
             </nav>
 
-            <div class="btn-contato">
+            <div class="btn-contato" id="btncontato">
                 <a href="#contact-section">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
 
+            <div class="aaaa"></div>
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
             </div>
@@ -52,8 +53,8 @@
 
                 <nav>
                     <ul>
-                        <li><a href="especiliadades">Hobbys</a></li>
-                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#especiliadades">Hobbys</a></li>
+                        <li><a href="https://gmateus007.github.io/gomes-projetos/">Projetos</a></li>
                         <li><a href="#contact-section">Contato</a></li>
                     </ul>
                 </nav>
@@ -63,10 +64,6 @@
                         <button>Contato</button>
                     </a>
                 </div><!--btn-contato-->
-    
-                <div class="btn-abrir-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div>
     
                 <div class="menu-mobile" id="menu-mobile">
                     <div class="btn-fechar">
@@ -145,6 +142,16 @@
             </div><!--interface-->
         </section><!--sobre-->
         <section id="contact-section">
+            <h2 class="titulo">Contato</h2>
+            <form action="https://formsubmit.co/sergeantguy321@gmail.com" method="POST">
+                <input type="text" name="Nome" placeholder="Seu nome" class="contact-input" required>
+                <input type="email" name="Email" placeholder="Seu email" class="contact-input" required>
+                <textarea name="message" placeholder="Sua mensagem" class="contact-input"></textarea required>
+                <button type="submit" class="btn">Enviar</button>
+                <input type="hidden" name="_subject" value="Novo Contato">
+                <input type="text" name="_honey" style="display:none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_cc" value="mateusg@acad.ifma.edu.br">
             </form>
         </section>
     </main>
@@ -167,6 +174,5 @@
             </div><!--line-footer-->
         </div><!--interface-->
     </footer>
-
 </body>
 </html>
