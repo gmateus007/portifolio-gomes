@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -33,16 +34,16 @@ body {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    transition: .2s;
+    transition: all .2s;
 }
 
-h2.titulo {
+.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span {
+.titulo span {
     color: #7c040e;
 }
 
@@ -67,7 +68,7 @@ header a {
     color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: all .2s;
 }
 
 header nav.menu-desktop a:hover {
@@ -86,13 +87,17 @@ header nav.menu-desktop ul li {
 
 /* ESTILO DO MENU MOBILE */
 
-.btn-abrir-menu{
-    display: none;
-}
-
 .btn-abrir-menu i{
     color: #7c040e;
     font-size: 40px;
+}
+
+.aaaa {
+    display: none;
+}
+
+.btn-abrir-menu {
+    display: none;
 }
 
 .menu-mobile{
@@ -104,7 +109,7 @@ header nav.menu-desktop ul li {
     z-index: 99999;
     width: 0%;
     overflow: hidden;
-    transition: .5s;
+    transition: all .5s;
 }
 
 .menu-mobile.abrir-menu{
@@ -315,9 +320,16 @@ footer .line-footer p a {
     }
 
     /* CABEÇALHO */
-    .menu-desktop,
-    .btn-contato {
+    .menu-desktop, .btn-contato {
         display: none;
+    }
+
+    .aaaa {
+        display: block;
+    }
+    
+    .btn-abrir-menu {
+        display: block;
     }
 
     /* TOPO DO SITE */
@@ -436,4 +448,53 @@ button {
 
 button:hover {
     background-color: #ff3333; /* Vermelho claro */
+}
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn {
+    background: white;
+    color:#7c040e;
+    transition: all .2s;
+}
+
+.btn:hover {
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+form textarea {
+    height: 160px;
+}
+
+.contact-input {
+    border-radius: 10px;
+    border: none;
+    background:#7c040e;
+    color: white;
+    resize: none;
+    padding: 16px;
+}
+
+.contact-input:focus {
+    outline: none;
+}
+
+.contact-input::placeholder {
+    color: white;
 }
